@@ -19,9 +19,7 @@
       --tag-fg: #ade1ff;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -60,17 +58,8 @@
       font-size: 1.12em;
     }
 
-    .summary a {
-      color: #79e5ff;
-      border-bottom: 1.5px dotted #85b8ff;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    .summary a:hover {
-      color: var(--secondary);
-      border-color: var(--secondary);
-    }
+    .summary a { color: #79e5ff; border-bottom: 1.5px dotted #85b8ff; font-weight: 600; text-decoration: none; }
+    .summary a:hover { color: var(--secondary); border-color: var(--secondary); }
 
     .section-title {
       margin: 38px 0 18px;
@@ -105,19 +94,9 @@
       border-color: #213852;
     }
 
-    .card-title {
-      font-size: 1.18em;
-      font-weight: 600;
-      color: #65c7ff;
-      margin-bottom: 6px;
-    }
+    .card-title { font-size: 1.18em; font-weight: 600; color: #65c7ff; margin-bottom: 6px; }
 
-    .card-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: 10px;
-    }
+    .card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
 
     .tag {
       background: var(--tag-bg);
@@ -138,12 +117,7 @@
       flex-grow: 1;
     }
 
-    .card-links {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      margin-bottom: 6px;
-    }
+    .card-links { display: flex; flex-direction: column; gap: 4px; margin-bottom: 6px; }
 
     a {
       color: #72b6ff;
@@ -154,11 +128,7 @@
       font-weight: 500;
     }
 
-    a:hover {
-      color: #ffef6d;
-      border-color: #ffef6d;
-      text-decoration: underline;
-    }
+    a:hover { color: #ffef6d; border-color: #ffef6d; text-decoration: underline; }
 
     .zip-link {
       color: #b2ff59;
@@ -167,33 +137,16 @@
       border-bottom: 1.5px dotted #689f38;
     }
 
-    .zip-link:hover {
-      color: var(--secondary);
-      border-color: var(--secondary);
-    }
+    .zip-link:hover { color: var(--secondary); border-color: var(--secondary); }
 
-    .beta {
-      color: #ffd180;
-      font-size: 0.95em;
-      font-style: italic;
-    }
+    .beta { color: #ffd180; font-size: 0.95em; font-style: italic; }
 
     @media (max-width: 700px) {
-      .card {
-        padding: 16px 10px;
-      }
-      h1 {
-        font-size: 1.5em;
-      }
-      .section-title {
-        font-size: 1.08em;
-      }
-      .cards-grid {
-        gap: 15px;
-      }
-      .summary {
-        font-size: .98em;
-      }
+      .card { padding: 16px 10px; }
+      h1 { font-size: 1.5em; }
+      .section-title { font-size: 1.08em; }
+      .cards-grid { gap: 15px; }
+      .summary { font-size: .98em; }
     }
   </style>
 </head>
@@ -461,15 +414,16 @@
         </div>
       </div>
 
-      <!-- New Legacy Tools -->
+      <!-- Legacy Alpine Kindle -->
       <div class="card">
-        <div class="card-title">Alpine Kindle (Old Version)</div>
+        <div class="card-title">Alpine Kindle (New &amp; Old)</div>
         <div class="card-tags"><span class="tag">Tool</span><span class="tag">Legacy</span></div>
         <div class="card-desc">
-          Alpine Kindle original modding toolkit for older devices. Not actively maintained.
+          Alpine Kindle modding toolkit for older devices. New community-maintained releases and the original repository included.
         </div>
         <div class="card-links">
-          <a href="https://github.com/schuhumi/alpine_kindle" target="_blank">Alpine Kindle (GitHub)</a>
+          <a href="https://github.com/Entersjkhdfkjdhfksjf/alpine_kindle/releases" target="_blank">Latest Releases (GitHub)</a>
+          <a href="https://github.com/schuhumi/alpine_kindle" target="_blank">Original Alpine Kindle (GitHub)</a>
         </div>
       </div>
       <div class="card">
@@ -525,6 +479,18 @@
         </div>
         <div class="card-links">
           <a class="zip-link" href="downloads/Telnet.sh" download>Download Telnet.sh</a>
+        </div>
+      </div>
+
+      <!-- New KPM Card -->
+      <div class="card">
+        <div class="card-title">KPM (Kindle Package Manager)</div>
+        <div class="card-tags"><span class="tag">Dev</span></div>
+        <div class="card-desc">
+          Package manager for Kindle providing easy installation and management of mods and utilities.
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/gingrspacecadet/kpm" target="_blank">KPM (GitHub)</a>
         </div>
       </div>
     </div>
